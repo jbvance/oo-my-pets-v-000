@@ -29,6 +29,10 @@ class Owner
     @pets[:dogs] << dog
   end
 
+  def walk_dogs
+    @pets[:dogs].collect {|dog| dog.mood = "happy" }
+  end
+
   def self.all
     @@all
   end
